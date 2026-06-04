@@ -12,5 +12,9 @@ app.use(express.json());
 app.use('/api/users',  userRoutes);
 app.use('/api/cycles', cycleRoutes);
 
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Lutea API → http://localhost:${PORT}`));
