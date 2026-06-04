@@ -13,4 +13,4 @@ app.use('/api/users',  userRoutes);
 app.use('/api/cycles', cycleRoutes);
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`:))Dora API → http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Lutea API → http://localhost:${PORT}`));

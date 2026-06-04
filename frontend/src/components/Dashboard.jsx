@@ -70,9 +70,12 @@ export default function Dashboard({ user, onLogout }) {
 
       {/* Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 22 }}>
-        <div>
-          <h1 style={{ fontSize: 28, fontWeight: 700, color: '#d63384', letterSpacing: '-0.5px' }}>:)) Dora</h1>
-          <p style={{ color: '#c48bba', fontSize: 14, marginTop: 2 }}>Hi, {user.name} ✨</p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <img src="/Lutia.png" alt="Lutea" style={{ width: 100, height: 100, objectFit: 'contain' }} />
+          <div>
+            <h1 style={{ fontSize: 24, fontWeight: 700, color: '#d63384', letterSpacing: '-0.5px' }}>Lutea</h1>
+            <p style={{ color: '#c48bba', fontSize: 13, marginTop: 1 }}>Hi, {user.name} ✨</p>
+          </div>
         </div>
         <button className="btn-ghost" onClick={onLogout} style={{ padding: '8px 18px', fontSize: 13 }}>
           Switch user

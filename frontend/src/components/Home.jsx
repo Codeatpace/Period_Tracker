@@ -37,11 +37,13 @@ export default function Home({ onSelectUser }) {
 
       {/* Brand */}
       <div style={{ textAlign: 'center', marginBottom: 30 }}>
-        <div style={{ fontSize: 52, lineHeight: 1, marginBottom: 10 }}>:))</div>
-        <h1 style={{ fontSize: 38, fontWeight: 700, color: '#d63384', letterSpacing: '-1px' }}>
-          Dora
-        </h1>
-        <p style={{ color: '#c48bba', fontSize: 14, marginTop: 4 }}>your cycle, your rhythm</p>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 12, justifyContent: 'center' }}>
+          <img src="/Lutia.png" alt="Lutea" style={{ width: 100, height: 100, objectFit: 'contain' }} />
+          <h1 style={{ fontSize: 48, fontWeight: 700, color: '#d63384', letterSpacing: '-1px' }}>
+            Lutea
+          </h1>
+        </div>
+        <p style={{ color: '#c48bba', fontSize: 14, marginTop: 6 }}><b>Your Cycle, Your Rhythm</b></p>
       </div>
 
       {/* Quote */}
