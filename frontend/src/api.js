@@ -1,7 +1,9 @@
 // All API calls — proxy strips /api prefix in dev via vite.config.js
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+
 const req = (path, opts) =>
-  fetch(path, { headers: { 'Content-Type': 'application/json' }, ...opts }).then(r => r.json())
+  fetch(`${API_BASE}${path}`, { headers: { 'Content-Type': 'application/json' }, ...opts }).then(r => r.json())
 
 export const getQuote   = ()           => req('/api/users/quote')
 export const getUsers   = ()           => req('/api/users')
