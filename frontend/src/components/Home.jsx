@@ -38,9 +38,9 @@ export default function Home({ onSelectUser }) {
       {/* Brand */}
       <div style={{ textAlign: 'center', marginBottom: 30 }}>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 12, justifyContent: 'center' }}>
-          <img src="/Lutia.png" alt="Lutea" style={{ width: 100, height: 100, objectFit: 'contain' }} />
+          <img src="/Lutia.png" alt="Lutia" style={{ width: 100, height: 100, objectFit: 'contain' }} />
           <h1 style={{ fontSize: 48, fontWeight: 700, color: '#d63384', letterSpacing: '-1px' }}>
-            Lutea
+            Lutia
           </h1>
         </div>
         <p style={{ color: '#c48bba', fontSize: 14, marginTop: 6 }}><b>Your Cycle, Your Rhythm</b></p>

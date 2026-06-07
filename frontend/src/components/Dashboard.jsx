@@ -71,9 +71,9 @@ export default function Dashboard({ user, onLogout }) {
       {/* Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 22 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <img src="/Lutia.png" alt="Lutea" style={{ width: 100, height: 100, objectFit: 'contain' }} />
+          <img src="/Lutia.png" alt="Lutia" style={{ width: 100, height: 100, objectFit: 'contain' }} />
           <div>
-            <h1 style={{ fontSize: 24, fontWeight: 700, color: '#d63384', letterSpacing: '-0.5px' }}>Lutea</h1>
+            <h1 style={{ fontSize: 24, fontWeight: 700, color: '#d63384', letterSpacing: '-0.5px' }}>Lutia</h1>
             <p style={{ color: '#c48bba', fontSize: 13, marginTop: 1 }}>Hi, {user.name} ✨</p>
           </div>
         </div>

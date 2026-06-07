@@ -17,4 +17,4 @@ app.get('/health', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`Lutea API → http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Lutia API → http://localhost:${PORT}`));
