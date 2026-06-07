@@ -25,4 +25,16 @@ async function createUser(req, res) {
   }
 }
 
-module.exports = { getUsers, createUser };
+async function signIn(req, res) {
+  const { email } = req.body;
+  if (!email) return res.status(400).json({ error: 'Email is required' });
+  try {
+    const { rows } = await db.query('SELECT * FROM users WHERE email = $1', [email]);
+    if (!rows.length) return res.status(404).json({ error: 'User not found' });
+    res.json({ user: rows[0], quote: randomQuote() });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+}
+
+module.exports = { getUsers, createUser, signIn };

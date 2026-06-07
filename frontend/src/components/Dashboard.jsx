@@ -78,7 +78,7 @@ export default function Dashboard({ user, onLogout }) {
           </div>
         </div>
         <button className="btn-ghost" onClick={onLogout} style={{ padding: '8px 18px', fontSize: 13 }}>
-          Switch user
+          Logout
         </button>
       </div>
 
